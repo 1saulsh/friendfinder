@@ -11,8 +11,8 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname + "/../public/survey.html")); 
     });
 
-    //create routefor homepage hey if user is using app and not on predefined URL go ahead and bring them to home page
-    app.use(function(req,res){
+    //create route for homepage. if user is using app and not on predefined URL go ahead and bring them to home page
+    app.use(function(req, res){
         res.sendFile(path.join(__dirname + "/../public/home.html"));  
-    })
+    });
 }
