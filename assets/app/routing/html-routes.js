@@ -7,12 +7,12 @@ var path= require("path");
 module.exports = function (app) {
     
     //when the user hits the url/survey we want to deliver survey.html
-    app.get("/survey", function(req, res) {
-        res.sendFile(path.join(__dirname + "/../public/survey.html")); 
+    app.get("../public/survey", function(req, res) {
+        res.sendFile(path.join(__dirname + "../public/survey.html")); 
     });
 
     //create route for homepage. if user is using app and not on predefined URL go ahead and bring them to home page
-    app.use(function(req, res){
-        res.sendFile(path.join(__dirname + "/../public/home.html"));  
+    app.use(function(req, res) {
+        res.sendFile(path.join(__dirname + "../public/home.html"));  
     });
 }
