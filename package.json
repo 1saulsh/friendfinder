@@ -1,0 +1,24 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "**Friend Finder Application**",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "easy-table": "^1.1.1",
+    "express": "^4.16.3",
+    "geocoder": "^0.2.3",
+    "inquirer": "^5.2.0",
+    "json": "^9.0.6",
+    "mysql": "^2.15.0",
+    "omdb": "^0.8.0",
+    "table": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
